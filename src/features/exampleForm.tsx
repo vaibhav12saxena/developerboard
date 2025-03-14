@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Input } from '../components/Input';
+import { MailIcon } from '../assets/icons/mail';
+import { CheckIcon } from '../assets/icons/checkbox';
 
 const ExampleForm = () => {
-  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [error, setError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setName(e.target.value);
+    setEmail(e.target.value);
     if (e.target.value.length < 3) {
       setError('Minimum 3 characters required');
     } else {
@@ -17,13 +19,17 @@ const ExampleForm = () => {
   return (
     <div className="p-4 max-w-md mx-auto">
       <Input
-        label="Name"
-        placeholder="Enter your name"
-        type="text"
-        value={name}
+        label="Email"
+        placeholder="Enter your email"
+        value={email}
         onChange={handleChange}
+        debounceTime={500}
+        onDebouncedChange={(val) => console.log('Debounced:', val)}
+        prefix="@"
+        suffix=".com"
+        leftIcon={<MailIcon />}
+        rightIcon={<CheckIcon />}
         error={error}
-        fullWidth={false}
       />
     </div>
   );

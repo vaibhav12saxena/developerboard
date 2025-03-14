@@ -9,12 +9,7 @@ module.exports = {
       },
     },
     plugins: ['react', 'react-hooks', '@typescript-eslint'],
-    extends: [
-      'eslint:recommended',
-      'plugin:react/recommended',
-      'plugin:@typescript-eslint/recommended',
-      'prettier',
-    ],
+    extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'prettier', 'plugin:storybook/recommended'],
     rules: {
       'react/react-in-jsx-scope': 'off',
     },
