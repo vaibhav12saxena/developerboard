@@ -1,6 +1,6 @@
-import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as s}from"./index-CePRvBtH.js";import{M as r,T as o,S as l}from"./index-DhOscw2S.js";import"./index-DmM0KDA7.js";import"./iframe-NteaS91-.js";import"./index-nLeaPAJ8.js";import"./index-CXQShRbs.js";import"./index-DrFu-skq.js";function t(i){const e={code:"code",h2:"h2",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...s(),...i.components};return n.jsxs(n.Fragment,{children:[n.jsx(r,{title:"📘 Welcome/Introduction"}),`
-`,n.jsx(o,{children:"Welcome to Storybook"}),`
-`,n.jsx(l,{children:"React Vite DeveloperBoard"}),`
+import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as t}from"./index-CePRvBtH.js";import{M as r,T as l,S as o}from"./index-CKvabGqe.js";import"./index-DmM0KDA7.js";import"./iframe-DHOw1iup.js";import"./index-nLeaPAJ8.js";import"./index-CXQShRbs.js";function s(i){const e={code:"code",h2:"h2",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...t(),...i.components};return n.jsxs(n.Fragment,{children:[n.jsx(r,{title:"📘 Welcome/Introduction"}),`
+`,n.jsx(l,{children:"Welcome to Storybook"}),`
+`,n.jsx(o,{children:"React Vite DeveloperBoard"}),`
 `,n.jsx(e.h2,{id:"️-tech-stack-at-a-glance",children:"🛠️ Tech Stack at a Glance"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"⚛️ React (TypeScript)"}),`
@@ -28,4 +28,4 @@ import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as s}from"
 `,n.jsx(e.li,{children:"Refer to code snippets and usage examples"}),`
 `]}),`
 `,n.jsx(e.hr,{}),`
-`,n.jsx(e.p,{children:"Happy coding 🚀"})]})}function u(i={}){const{wrapper:e}={...s(),...i.components};return e?n.jsx(e,{...i,children:n.jsx(t,{...i})}):t(i)}export{u as default};
+`,n.jsx(e.p,{children:"Happy coding 🚀"})]})}function m(i={}){const{wrapper:e}={...t(),...i.components};return e?n.jsx(e,{...i,children:n.jsx(s,{...i})}):s(i)}export{m as default};
