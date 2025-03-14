@@ -32,7 +32,7 @@ export const WithIcons: Story = {
 
 export const WithPrefixSuffix: Story = {
   args: {
-    label: 'Total Amount',
+    label: 'Amount',
     prefix: '$',
     suffix: 'USD',
     placeholder: 'Enter amount',
