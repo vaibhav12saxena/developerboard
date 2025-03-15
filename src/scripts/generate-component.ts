@@ -72,14 +72,14 @@ describe('${componentName}', () => {
 `;
 
 fs.writeFileSync(`${componentDir}/${componentName}.test.tsx`, testFile.trim());
-
+const formattedPath = componentName.split('/').pop();
 // 👉 storybook file
 const storiesFile = `
 import type { Meta, StoryObj } from '@storybook/react';
 import { ${componentName} } from './${componentName}';
 
 const meta: Meta<typeof ${componentName}> = {
-  title: 'Atoms/${componentName}',
+  title: 'Atoms/${formattedPath}',
   component: ${componentName},
   tags: ['autodocs'],
 };
