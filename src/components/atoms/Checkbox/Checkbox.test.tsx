@@ -1,11 +1,13 @@
 /// <reference types="@testing-library/jest-dom" />
 
 import { render, screen } from '@testing-library/react';
-import { Radio } from './Radio';
+import { Checkbox } from './Checkbox';
 
-describe('Radio', () => {
+describe('Checkbox', () => {
   it('renders correctly', () => {
-    render(<Radio text="Test text" />);
+    render(<Checkbox checked={false} onChange={function (checked: boolean): void {
+      throw new Error('Function not implemented.');
+    } }  />);
     expect(screen.getByText('Test text')).toBeInTheDocument();
   });
 });

@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Input } from './Input';
-import { MailIcon } from '../../assets/icons/mail';
-import { CheckIcon } from '../../assets/icons/checkbox';
+import { MailIcon } from '../../../assets/icons/mail';
+import { CheckIcon } from '../../../assets/icons/checkbox';
 
 const meta: Meta<typeof Input> = {
-  title: 'Components/Input',
+  title: 'Atoms/Input',
   component: Input,
   tags: ['autodocs'],
 };
@@ -119,6 +119,3 @@ export const CustomPrefixComponent: Story = {
     placeholder: '98765 43210',
   },
 };
-
-
-

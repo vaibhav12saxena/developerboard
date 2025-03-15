@@ -22,6 +22,7 @@ const componentDir = path.join(
   '..',
   'src',
   'components',
+  'atoms',
   componentName
 );
 
@@ -78,7 +79,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { ${componentName} } from './${componentName}';
 
 const meta: Meta<typeof ${componentName}> = {
-  title: 'Components/${componentName}',
+  title: 'Atoms/${componentName}',
   component: ${componentName},
   tags: ['autodocs'],
 };

@@ -1,5 +1,5 @@
 import './App.css';
-import { Button } from './components/Button';
+import { Button } from './components/atoms/Button';
 import Home from './pages/home';
 import ExampleForm from './features/exampleForm';
 

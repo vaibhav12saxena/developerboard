@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Input } from '../components/Input';
+import { Input } from '../components/atoms/Input';
 import { MailIcon } from '../assets/icons/mail';
 import { CheckIcon } from '../assets/icons/checkbox';
 
