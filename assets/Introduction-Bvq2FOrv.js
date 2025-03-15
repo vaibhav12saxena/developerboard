@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as s}from"./index-CePRvBtH.js";import{M as r,T as o,S as l}from"./index-C7o68tFM.js";import"./index-DmM0KDA7.js";import"./iframe-s-QDBJlA.js";import"./index-D_Kw7eWP.js";import"./index-nLeaPAJ8.js";import"./index-CXQShRbs.js";function t(i){const e={code:"code",h2:"h2",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...s(),...i.components};return n.jsxs(n.Fragment,{children:[n.jsx(r,{title:"📘 Welcome/Introduction"}),`
+import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as s}from"./index-CePRvBtH.js";import{M as r,T as o,S as l}from"./index-BZ2fHy-e.js";import"./index-DmM0KDA7.js";import"./iframe-D4aFK83b.js";import"./index-D_Kw7eWP.js";import"./index-nLeaPAJ8.js";import"./index-CXQShRbs.js";function t(i){const e={code:"code",h2:"h2",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...s(),...i.components};return n.jsxs(n.Fragment,{children:[n.jsx(r,{title:"📘 Welcome/Introduction"}),`
 `,n.jsx(o,{children:"Welcome to Storybook"}),`
 `,n.jsx(l,{children:"React Vite DeveloperBoard"}),`
 `,n.jsx(e.h2,{id:"️-tech-stack-at-a-glance",children:"🛠️ Tech Stack at a Glance"}),`
