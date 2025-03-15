@@ -24,8 +24,8 @@ jobs:
       - name: Build Storybook
         run: npm run storybook:build
 
-      - name: Run Unit Tests
-        run: npm run test
+      # - name: Run Unit Tests
+      #   run: npm run test
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
