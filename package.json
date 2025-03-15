@@ -12,7 +12,9 @@
     "storybook:build": "storybook build",
     "storybook:dev": "storybook dev -p 6006",
     "storybook": "npm run storybook:build && npm run storybook:dev",
-    "deploy-storybook": "gh-pages -d storybook-static"
+    "deploy-storybook": "gh-pages -d storybook-static",
+    "test": "vitest",
+    "test:watch": "vitest --watch"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^6.6.3",

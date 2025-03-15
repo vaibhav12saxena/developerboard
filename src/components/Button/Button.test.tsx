@@ -9,3 +9,15 @@ describe('Button', () => {
     expect(screen.getByText('Test text')).toBeInTheDocument();
   });
 });
+
+describe('Button', () => {
+  it('renders with label', () => {
+    render(<Button text="Click Me" />);
+    expect(screen.getByText('Click Me')).toBeInTheDocument();
+  });
+
+  it('has correct variant class', () => {
+    const { container } = render(<Button text="Test" variant="outline" />);
+    expect(container.firstChild).toHaveClass('btn-outline');
+  });
+});
