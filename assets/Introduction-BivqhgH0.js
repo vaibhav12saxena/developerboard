@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as t}from"./index-CePRvBtH.js";import{M as r,T as l,S as o}from"./index--tCdsdK7.js";import"./index-DmM0KDA7.js";import"./iframe-CF6foThY.js";import"./index-nLeaPAJ8.js";import"./index-CXQShRbs.js";function s(i){const e={code:"code",h2:"h2",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...t(),...i.components};return n.jsxs(n.Fragment,{children:[n.jsx(r,{title:"📘 Welcome/Introduction"}),`
+import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as t}from"./index-CePRvBtH.js";import{M as r,T as l,S as o}from"./index-Mu2ohGB8.js";import"./index-DmM0KDA7.js";import"./iframe-D9XOTV66.js";import"./index-nLeaPAJ8.js";import"./index-CXQShRbs.js";function s(i){const e={code:"code",h2:"h2",hr:"hr",li:"li",p:"p",strong:"strong",ul:"ul",...t(),...i.components};return n.jsxs(n.Fragment,{children:[n.jsx(r,{title:"📘 Welcome/Introduction"}),`
 `,n.jsx(l,{children:"Welcome to Storybook"}),`
 `,n.jsx(o,{children:"React Vite DeveloperBoard"}),`
 `,n.jsx(e.h2,{id:"️-tech-stack-at-a-glance",children:"🛠️ Tech Stack at a Glance"}),`
