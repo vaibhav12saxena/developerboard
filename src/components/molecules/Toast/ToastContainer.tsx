@@ -1,5 +1,5 @@
 import React from 'react';
-import { ToastItem } from './ToastItem';
+import { ToastItem } from '../../organisms/ToastItem';
 import { useToastContext } from './toast.context';
 
 export const ToastContainer: React.FC = () => {

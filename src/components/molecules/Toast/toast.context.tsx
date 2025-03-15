@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useState, ReactNode } from 'react';
 
 type ToastType = 'success' | 'error' | 'info' | 'warning';
 
@@ -45,6 +45,7 @@ export const ToastProvider = ({ children }: { children: ReactNode }) => {
 
 export const useToastContext = () => {
   const context = useContext(ToastContext);
-  if (!context) throw new Error('useToastContext must be used within ToastProvider');
+  if (!context)
+    throw new Error('useToastContext must be used within ToastProvider');
   return context;
 };

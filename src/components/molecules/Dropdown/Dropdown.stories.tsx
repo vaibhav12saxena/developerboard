@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { User, Mail, Bell } from 'lucide-react';
 
 const meta: Meta<typeof Dropdown> = {
-  title: 'Atoms/Dropdown',
+  title: 'Molecules/Dropdown',
   component: Dropdown,
   tags: ['autodocs'],
 };

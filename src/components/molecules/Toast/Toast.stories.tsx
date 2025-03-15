@@ -4,7 +4,7 @@ import { Toast } from './Toast';
 import { useState } from 'react';
 
 const meta: Meta<typeof Toast> = {
-  title: 'Components/Toast',
+  title: 'Molecules/Toast',
   component: Toast,
   tags: ['autodocs'],
   argTypes: {
@@ -91,7 +91,8 @@ InteractiveToast.storyName = 'Interactive Example';
 InteractiveToast.parameters = {
   docs: {
     description: {
-      story: 'Click the button to trigger the toast. This is just a simulation — real usage should go through `ToastContext`.',
+      story:
+        'Click the button to trigger the toast. This is just a simulation — real usage should go through `ToastContext`.',
     },
   },
 };
