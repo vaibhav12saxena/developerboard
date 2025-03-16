@@ -26,16 +26,16 @@ jobs:
       - name: Build Storybook
         run: npm run storybook:build
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: deploy
-          clean: true
-
       - name: 📂 Move Both Builds to deploy folder
         run: |
           mkdir deploy
           cp -r dist/* deploy/
           mkdir deploy/storybook
           cp -r storybook-static/* deploy/storybook/
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: deploy
+          clean: true
