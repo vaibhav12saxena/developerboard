@@ -1,54 +1,108 @@
-# React + TypeScript + Vite
+🚀 React Project Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🧠 Goal
 
-Currently, two official plugins are available:
+This project is designed as a learning-focused, production-grade React application to help you learn and implement all important frontend concepts expected from a FAANG-level SDE3 engineer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎯 Objectives
 
-## Expanding the ESLint configuration
+Learn React concepts the right way — no copy-paste, pure understanding-first approach
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Build a reusable, scalable architecture from day one
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Gain real-world experience with auth, APIs, routing, role-based access, and more
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+✅ Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🔐 Authentication Flow
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Login page (Public Route)
+
+Token-based Authentication
+
+Auth Context with persistent login
+
+Logout flow
+
+Role-based routing (upcoming)
+
+🔒 Private App Area (After Login)
+
+Dashboard page
+
+Projects page (List of all projects)
+
+Project Details page (Detailed view of a project)
+
+📂 Routing Setup
+
+Public Routes: /login, etc.
+
+Private Routes: /dashboard, /project, /project/:id
+
+Fallback NotFound page
+
+Route protection using Context
+
+🧱 Component Design (Atomic Design)
+
+Atoms
+
+Molecules
+
+Organisms
+
+Designed for reusability and future NPM packaging
+
+🎨 Layouts
+
+Shared AppLayout for private pages
+
+Sidebar + Header structure
+
+🌐 API Integration Plan
+
+Dummy JSON / Promises initially
+
+Later switch to real Node.js backend service
+
+JWT Auth
+
+Database Integration
+
+User Role Management
+
+🏗 Folder Structure Highlights
+
+src/
+├─ components/atoms
+├─ components/molecules
+├─ components/organisms
+├─ pages
+├─ routes (PublicRoutes, PrivateRoutes, AppRoutes)
+├─ layouts (AppLayout)
+├─ hooks, utils, services, store
+
+🛠 Developer Experience
+
+Path aliasing with @/
+
+Barrel exports
+
+Scalable codebase
+
+TailwindCSS styling
+
+🔮 Future Scope
+
+Team & Role management
+
+Task module with comments
+
+Real-time data updates
+
+Analytics dashboard
+
+Dark/Light Theme support
+
+Migrate to Next.js if needed
