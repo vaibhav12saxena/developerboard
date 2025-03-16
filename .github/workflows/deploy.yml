@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -22,23 +22,19 @@ jobs:
 
       - name: Build Vite App
         run: npm run build
-      - name: Add 404 fallback for GitHub Pages
-        run: cp dist/index.html deploy/404.html
 
       - name: Build Storybook
         run: npm run storybook:build
 
-      - name: 📂 Move Both Builds to deploy folder
+      - name: Prepare Deployment Folder
         run: |
-          mkdir deploy
+          mkdir -p deploy
           cp -r dist/* deploy/
-          mkdir deploy/storybook
+          cp deploy/index.html deploy/404.html || echo "index.html not found, skipping 404.html creation"
+          mkdir -p deploy/storybook
           cp -r storybook-static/* deploy/storybook/
 
-      - name: Add .nojekyll file
-        run: touch deploy/.nojekyll
-
-      - name: 🚀 Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
