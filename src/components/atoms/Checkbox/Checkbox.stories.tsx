@@ -13,6 +13,6 @@ type Story = StoryObj<typeof Checkbox>;
 
 export const Primary: Story = {
   args: {
-    text: 'Checkbox rendered from Storybook',
+    // text: 'Checkbox rendered from Storybook',
   },
 };

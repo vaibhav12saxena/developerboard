@@ -1,11 +1,11 @@
 /// <reference types="@testing-library/jest-dom" />
 
 import { render, screen } from '@testing-library/react';
-import { TextArea } from './TextArea';
+import { Textarea } from './TextArea';
 
 describe('TextArea', () => {
   it('renders correctly', () => {
-    render(<TextArea text="Test text" />);
+    render(<Textarea />);
     expect(screen.getByText('Test text')).toBeInTheDocument();
   });
 });

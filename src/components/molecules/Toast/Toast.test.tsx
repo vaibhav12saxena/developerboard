@@ -5,7 +5,7 @@ import { Toast } from './Toast';
 
 describe('Toast', () => {
   it('renders correctly', () => {
-    render(<Toast text="Test text" />);
+    render(<Toast type={'success'} message={''} />);
     expect(screen.getByText('Test text')).toBeInTheDocument();
   });
 });

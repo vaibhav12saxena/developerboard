@@ -12,7 +12,7 @@ const pageFolder = path.join(__dirname, `..`, 'pages', pageName);
 const indexedFilePath = path.join(pageFolder, `index.tsx`);
 const testFilePath = path.join(pageFolder, `${pageName}.test.tsx`);
 
-const indexFileContent = `import React from 'react';
+const indexFileContent = `
 
 const ${pageName} = () => {
     return (
@@ -25,7 +25,7 @@ const ${pageName} = () => {
 export default ${pageName}
 `;
 
-const testFileContent = `import React from 'react';
+const testFileContent = `
 import { render, screen } from '@testing-library/react';
 
 describe('${pageName} Page', () => {

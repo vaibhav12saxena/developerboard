@@ -5,7 +5,9 @@ import { Modal } from './Modal';
 
 describe('Modal', () => {
   it('renders correctly', () => {
-    render(<Modal text="Test text" />);
+    render(<Modal isOpen={false} onClose={function (): void {
+      throw new Error('Function not implemented.');
+    } } children={undefined}  />);
     expect(screen.getByText('Test text')).toBeInTheDocument();
   });
 });

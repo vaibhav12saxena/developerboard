@@ -5,7 +5,7 @@ import { Checkbox } from './Checkbox';
 
 describe('Checkbox', () => {
   it('renders correctly', () => {
-    render(<Checkbox checked={false} onChange={function (checked: boolean): void {
+    render(<Checkbox checked={false} onChange={function (): void {
       throw new Error('Function not implemented.');
     } }  />);
     expect(screen.getByText('Test text')).toBeInTheDocument();

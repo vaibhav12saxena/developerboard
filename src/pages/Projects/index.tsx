@@ -1,11 +1,7 @@
-import React from 'react';
-
 const Projects = () => {
-    return (
-        <div className="p-4 text-xl font-semibold text-gray-700">
-            Projects Page
-        </div>
-    )
-}
+  return (
+    <div className="p-4 text-xl font-semibold text-gray-700">Projects Page</div>
+  );
+};
 
-export default Projects
+export default Projects;
