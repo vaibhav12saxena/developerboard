@@ -1,9 +1,9 @@
 import {
-    createBrowserRouter,
-    createRoutesFromElements,
-    Route,
-  } from 'react-router-dom';
-  
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+} from 'react-router-dom';
+
 import { PublicRoutes } from './publicRoutes';
 import { PrivateRoutes } from './privateRoutes';
 import NotFound from '../pages/NotFound';
@@ -15,5 +15,8 @@ export const AppRoutes = createBrowserRouter(
       {PrivateRoutes}
       {<Route path="*" element={<NotFound />} />}
     </>
-  )
+  ),
+  {
+    basename: '/developerboard', // 👈 This is the fix!
+  }
 );
