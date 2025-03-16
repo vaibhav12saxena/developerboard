@@ -30,7 +30,7 @@ jobs:
         run: |
           mkdir -p deploy
           cp -r dist/* deploy/
-          cp deploy/index.html deploy/404.html || echo "index.html not found, skipping 404.html creation"
+          cp dist/index.html deploy/404.html
           mkdir -p deploy/storybook
           cp -r storybook-static/* deploy/storybook/
 
