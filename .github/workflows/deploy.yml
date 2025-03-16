@@ -23,7 +23,7 @@ jobs:
       - name: Build Vite App
         run: npm run build
       - name: Add 404 fallback for GitHub Pages
-        run: cp deploy/index.html deploy/404.html
+        run: cp dist/index.html deploy/404.html
 
       - name: Build Storybook
         run: npm run storybook:build
