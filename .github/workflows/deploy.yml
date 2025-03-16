@@ -33,7 +33,10 @@ jobs:
           mkdir deploy/storybook
           cp -r storybook-static/* deploy/storybook/
 
-      - name: Deploy to GitHub Pages
+      - name: Add .nojekyll file
+        run: touch deploy/.nojekyll
+
+      - name: 🚀 Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
