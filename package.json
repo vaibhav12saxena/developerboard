@@ -5,7 +5,7 @@
   "type": "commonjs",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run storybook:build",
     "lint": "eslint .",
     "preview": "vite preview",
     "generate-component": "ts-node src/scripts/generate-component.ts",
